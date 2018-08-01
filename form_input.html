@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单input</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+	<body>
+	  <h1 align="center">注册信息</h1>
+	  <hr color="#336699" />
+	  <form>
+	  	<table width="600px" bgcolor="#f2f2f2" align="center">
+	  		<tr>
+	  			<td height="50px">姓名：</td>
+	  			<td height="50px"><input type="text" name="username" size="25" maxlength="6" placeholder="请输入姓名" /></td> 
+	  			<!--placeholder:提示文字-->
+	  		</tr>
+	  		<tr>
+	  			<td height="50px">邮箱：</td>
+	  			<td height="50px"><input type="text" name="email" value="@163.com" /></td>
+	  			<!--value:初始化值-->
+	  		</tr>
+	  		<tr>
+	  			<td height="50px">密码：</td>
+	  			<td height="50px"><input type="password" name="paw" size="25" maxlength="6" placeholder="请输入密码" /></td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px">确认密码：</td>
+	  			<td height="50px"><input type="password" name="paw" size="25" maxlength="6" placeholder="请再一次输入密码" /></td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px">上传照片：</td>
+	  			<td height="50px"><input type="file" name="file" /></td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px">性别：</td>
+	  			<td height="50px">男<input type="radio" name="sex" value="man" />
+	  			    女<input type="radio" name="sex" value="woman" checked /><!--checked：表示初始化时已选中的-->
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px">爱好：</td>
+	  			<td height="50px">读书<input type="checkbox" name="bx1" value="read" />
+	  			    唱歌<input type="checkbox" name="bx1" value="sing" />
+	  			    跳舞<input type="checkbox" name="bx1" value="dance" />
+	  			</td>
+	  		</tr>
+	  			<tr>
+	  			<td height="50px">爱好的运动：</td>
+	  			<td height="50px">游泳<input type="checkbox" name="bx2" value="1" />
+	  			    篮球<input type="checkbox" name="bx2" value="2" />
+	  			    足球<input type="checkbox" name="bx2" value="3" />
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="center"><input type="button" value="来点我" name="button" />
+	  			    <input type="submit" value="提交" name="submit" />
+	  			    <input type="reset" name="reset" />
+	  			</td>
+	  			<td>
+	  				<input type="image" name="image_button" src="D:\2345下载\Sublime Text 3\HTML\Html 3\image\image-button.png" />
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>
+	  				<input type="hidden" value="这是一个用户注册信息" name="hidden" />
+	  			</td>
+	  			<td></td>
+	  		</tr>
+	  	</table>
+	  </form>
+	</body>
+</html>

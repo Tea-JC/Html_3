@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单select</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+	<body>
+	  <h1 align="center">注册信息</h1>
+	  <hr color="#336699" />
+	  <form action="action.php" method="post" target="_blank"> 
+	  	<!--action:提交表单时向何处发送表单数据；method：设置表单以何种方式发送到指定页面；target:在何处打开action URL-->
+	  	<table width="600px" bgcolor="#f2f2f2" align="center">
+	  		<tr>
+	  			<td height="50px" align="right">姓名：</td>
+	  			<td height="50px"><input type="text" name="username" size="25" maxlength="6" placeholder="请输入姓名" /></td> 
+	  		
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="right">邮箱：</td>
+	  			<td height="50px"><input type="text" name="email" value="@163.com" /></td>
+	  			
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="right">密码：</td>
+	  			<td height="50px"><input type="password" name="paw" size="25" maxlength="6" placeholder="请输入密码" /></td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="right">确认密码：</td>
+	  			<td height="50px"><input type="password" name="paw" size="25" maxlength="6" placeholder="请再一次输入密码" /></td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="right">上传照片：</td>
+	  			<td height="50px"><input type="file" name="file" /></td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="right">性别：</td>
+	  			<td height="50px">男<input type="radio" name="sex" value="man" />
+	  			    女<input type="radio" name="sex" value="woman" checked /><!--checked：表示初始化时已选中的-->
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="right">爱好：</td>
+	  			<td height="50px">读书<input type="checkbox" name="bx1" value="read" />
+	  			    唱歌<input type="checkbox" name="bx1" value="sing" />
+	  			    跳舞<input type="checkbox" name="bx1" value="dance" />
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="right">爱好的运动：</td>
+	  			<td height="50px">游泳<input type="checkbox" name="bx2" value="1" />
+	  			                  篮球<input type="checkbox" name="bx2" value="2" />
+	  			                  足球<input type="checkbox" name="bx2" value="3" />
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="right">城市：</td>
+	  			<td height="50px">
+	  				<select name="city"> <!--下拉选择-->
+	  					<option value="xz">--请选择--</option>
+	  					<optgroup label="华北"> <!--分组-->
+	  					<option value="bj">北京</option>
+	  			        <option value="sh">上海</option>
+	  			        <option value="js">江苏</option>
+	  			        </optgroup>
+	  			        <optgroup label="华东">
+	  			        <option value="hn">河南</option>
+	  			        <option value="sc">四川</option>
+	  			        <option value="hz">杭州</option>
+	  			        </optgroup>
+	  	            </select>
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="right">简介：</td>
+	  			<td height="50px">
+	  				<textarea name="jj" rows="6" cols="50" placeholder="请输入个人简介"></textarea>
+	  			          <!--文本域-->
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="center" colspan="2"><input type="button" value="来点我" name="button" />
+	  			    <input type="submit" value="提交" name="submit" />
+	  			    <input type="reset" name="reset" />
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td height="50px" align="center" colspan="2">
+	  				<input type="image" name="image_button" src="D:\2345下载\Sublime Text 3\HTML\Html 3\image\image-button.png" />
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>
+	  				<input type="hidden" value="这是一个用户注册信息" name="hidden" />
+	  			</td>
+	  			<td></td>
+	  		</tr>
+	  	</table>
+	  </form>
+	</body>
+</html>
